@@ -1,0 +1,45 @@
+@import '../colors'
+
+div[ng-table-pagination]
+  ul
+    li
+      display: inline-block
+      padding: 0.2em
+      a
+        color: $shade-a
+
+.table, table, .serverTable
+  font-size: 12px
+  border-collapse: separate
+  border-spacing: 0 3px
+  tr
+    td
+      background: darken($shade-m, 3)
+  tr:hover
+    background: $shade-c
+    cursor: pointer
+  .working
+    animation: background-working 1s infinite
+  .success
+    animation: background-success 1s 1
+  .fail
+    animation: background-fail 1s 1
+  .stop
+    animation: background-stop 1s 1
+  input
+    background-color: $shade-z
+    height: auto
+    min-height: 0 !important
+    font-size: 0.6em
+    border-bottom: 2px solid $shade-y
+  input:focus
+    background-color: $shade-y
+    border-bottom: 2px solid $shade-b
+  button
+    background-color: $shade-y
+    height: auto
+  button:hover
+    background-color: $shade-b
+  .offline
+    td
+      background-color: $shade-o

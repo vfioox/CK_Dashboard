@@ -1,0 +1,18 @@
+{
+  "name": "ck_dashboard",
+  "version": "1.0.0",
+  "description": "Simple SASS-based dashboard styling",
+  "dependencies": {},
+  "devDependencies": {
+    "bourbon": "^4.3.4",
+    "gulp": "3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "2.6.1",
+    "gulp-count": "0.3.0",
+    "gulp-less": "3.3.0",
+    "gulp-sass": "3.1.0",
+    "gulp-watch": "4.3.11"
+  },
+  "author": "vfioox",
+  "license": "ISC"
+}

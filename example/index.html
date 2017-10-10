@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CK Monitoring</title>
+    <link href="../ck_dashboard.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2"
+          rel="application/font-woff2">
+</head>
+<body class="compass">
+<div class="main-window background">
+    <div class="top row border">
+        <div class="w10" style="width: 15%;">
+            <div class="emblem">
+                CK
+            </div>
+        </div>
+        <div class="w90" style="width: 85%;">
+            <div class="top-bar">
+                    <span class="content-padder">
+                        <span>overlay_title</span>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper row invisible cubic-bezier">
+        <div class="content">
+            <div class="overlay">
+                <div class="inside-wrap">
+                    <div class="inside">
+                        <div class="title-bar noselect" angular-ripple>
+                            overlay_title
+                            <div class="corner red" angular-ripple>
+                                X
+                            </div>
+                            <div class="corner red" angular-ripple>
+                                _
+                            </div>
+                        </div>
+                        <div class="overlay-content-wrap">
+                            <div class="overlay-content">
+                                <div class="soft">
+                                    overlay content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="left w10 no-select" style="width: 15%;">
+                <div class="nav-button">
+                    <div>
+                        <i class="fa fa-home"
+                           style="margin-left: 10px; display:inline-block; width: 20px; text-align: center"></i><span
+                            class="content-padder">Home</span>
+                    </div>
+                    <div class="sub-button-section">
+                        <i class="fa fa-home"></i><span class="content-padder">Sub-element</span>
+                    </div>
+                </div>
+            </aside>
+            <aside class="right w10" id="scrollArea" style="width: 85%;">
+                <div class="content-padder main">
+                    <div class="h100">
+                        <!---->
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="bottom row">
+        <div class="w10" style="width: 15%;">
+            <span class="content-padder"><i class="fa fa-plug"></i></span>
+        </div>
+        <div class="w90" style="width: 85%;">
+            version
+        </div>
+    </div>
+</div>
+</body>
+</html>

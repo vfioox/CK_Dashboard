@@ -1,0 +1,66 @@
+@import "../colors"
+
+.corner
+  display: block
+  height: 2em
+  width: auto
+  padding: 0 6px 0
+  line-height: 2em
+  float: right
+  text-align: center
+  background-color: $shade-c
+  cursor: pointer
+  .red
+    background: $deny-c
+
+.overlay-content-wrap
+  overflow: auto
+  height: 90%
+
+.overlay
+  width: 100%
+  position: absolute
+  z-index: 100
+  background: transparent
+  opacity: 0
+  height: 0
+  overflow: hidden
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s
+  .title-bar
+    height: 0
+  .inside-wrap
+    height: 0
+    opacity: 0
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s
+  .inside
+    height: 0
+    opacity: 0
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s
+
+.on
+  height: 100%
+  opacity: 1
+  overflow: auto
+  .title-bar
+    height: 2em
+    line-height: 2em
+    padding-left: 0.2em
+    vertical-align: baseline
+    color: $shade-a
+    background: $shade-x
+  .inside-wrap
+    display: block
+    padding: 2%
+    box-sizing: border-box
+    height: 100%
+    opacity: 1
+  .inside
+    background: $shade-m
+    height: 100%
+    opacity: 1
+
+.overlay-active
+  .main
+    height: 80vh
+    opacity: 0.3
+    overflow: hidden

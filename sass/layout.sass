@@ -1,0 +1,101 @@
+@import 'sub/colors'
+@import 'sub/grid'
+body
+  background: $shade-m
+
+.compass
+  height: 100vh
+  margin: 0
+  padding: 0
+  overflow: hidden
+  .main-window
+    background: $shade-m
+    color: $text-light
+    font-family: $default-font
+    height: 100%
+    .top
+      position: absolute
+      top: 0
+      line-height: 2em
+      height: 2em
+      border-bottom: 1.2px solid $shade-c
+      background: $layout-top
+      font-family: $stylish-font
+      .emblem
+        text-align: center
+        font-weight: bolder
+        height: 2em
+        line-height: 2em
+        color: $text-light
+        box-sizing: border-box
+        border-right: 1.2px solid $shade-c
+        background: $layout-box
+        min-width: 15em
+      .top-bar
+        height: 2em
+        width: 100%
+        line-height: 2em
+        vertical-align: baseline
+        color: $text-light
+        .minimized
+          font-size: 0.6em
+          margin-right: 0.3em
+          font-family: 'Muli', sans-serif
+          padding-left: 0.1em
+          padding-right: 0.1em
+          background-color: $shade-c
+    .wrapper
+      position: relative
+      padding-top: 2em
+      height: 100%
+      .content
+        height: 100%
+        margin-bottom: 2em
+        .left
+          border-right: 1.2px solid $shade-c
+          height: calc(100vh - 4em)
+          box-sizing: border-box
+          background: $layout-left
+          min-width: 15em
+          .nav-button
+            font-family: $stylish-font
+            height: 1.6em
+            line-height: 1.6em
+            vertical-align: baseline
+            padding-top: 0.1em
+            border-bottom: 1.2px solid $layout-top
+            color: $text-light
+            transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s
+            i
+              color: $text-light
+          .active
+            background-color: $shade-n
+            color: #f0e8d5
+            height: auto
+            .sub-button-section
+              height: 1.6em
+              color: $text-light
+              line-height: 1.6em
+              box-sizing: border-box
+            .selected
+              color: #f0e8d5
+          .sub-button-section
+            background-color: $shade-n !important
+            line-height: 0
+            padding-left: 2em
+            width: 100%
+            height: 0
+            overflow: hidden
+            transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s
+        .right
+          height: calc(100vh - 4em)
+          overflow-y: scroll
+    .bottom
+      border-top: 1.2px solid $shade-c
+      position: absolute
+      height: 2em
+      bottom: 0
+      line-height: 2em
+    .content-padder, .soft
+      box-sizing: border-box
+      padding: 0.5em
